@@ -1,5 +1,6 @@
 import { Singleton } from "./creational/singleton";
 import { executeFactoryMethod } from "./creational/factory-method";
+import { executeIterator } from "./behavioral/iterator";
 
 const singletonCode = () => {
     const s1 = Singleton.getInstance();
@@ -12,7 +13,6 @@ const singletonCode = () => {
     }
 }
 
-
-
-executeFactoryMethod();
 // singletonCode();
+// executeFactoryMethod();
+executeIterator();
