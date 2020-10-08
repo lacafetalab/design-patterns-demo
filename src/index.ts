@@ -1,5 +1,5 @@
 import { Singleton } from "./creational/singleton";
-import { executeFactoryMethod } from "./creational/factory-method";
+import { executeFactoryMethod } from "./creational/factory-method-consoles";
 import { executeIterator } from "./behavioral/iterator";
 
 const singletonCode = () => {
@@ -14,5 +14,5 @@ const singletonCode = () => {
 }
 
 // singletonCode();
-// executeFactoryMethod();
-executeIterator();
+executeFactoryMethod();
+// executeIterator();

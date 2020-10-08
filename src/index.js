@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var singleton_1 = require("./creational/singleton");
-var iterator_1 = require("./behavioral/iterator");
+var factory_method_consoles_1 = require("./creational/factory-method-consoles");
 var singletonCode = function () {
     var s1 = singleton_1.Singleton.getInstance();
     var s2 = singleton_1.Singleton.getInstance();
@@ -13,5 +13,5 @@ var singletonCode = function () {
     }
 };
 // singletonCode();
-// executeFactoryMethod();
-iterator_1.executeIterator();
+factory_method_consoles_1.executeFactoryMethod();
+// executeIterator();
