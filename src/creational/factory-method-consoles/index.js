@@ -8,7 +8,7 @@ exports.executeFactoryMethod = function () {
         // ...
         console.log('No se que consola sea solo quiero jugar');
         console.log(creator.getExclusives());
-        console.log(creator.playWithConsole());
+        creator.playWithConsole();
         console.log('Estuvo divertido');
         // ...
     };

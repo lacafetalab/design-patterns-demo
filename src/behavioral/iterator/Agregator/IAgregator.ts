@@ -1,3 +1,4 @@
+import { IGames } from "../../iterator-games/IGames";
 import { IIterator } from "./IIterator";
 
 export interface IAggregator {
