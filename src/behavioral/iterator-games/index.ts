@@ -1,7 +1,7 @@
-import { Games } from "./Games";
+import { GamesCollector } from "./GamesCollector";
 
 export const executeIterator = () => {
-    const collection = new Games();
+    const collection = new GamesCollector();
     collection.addItem(
         {
             id: 1,

@@ -1,12 +1,10 @@
-
-
 import { IAggregator } from "./Agregator/IAgregator";
 import { IIterator } from "./Agregator/IIterator";
 import { IGames } from "./IGames";
 import { GameNameOrderIterator } from "./Iterators/GameNameOrderIterator";
 import { StudioNameOrderIterator } from "./Iterators/StudioNameOrderIterator";
 
-export class Games implements IAggregator {
+export class GamesCollector implements IAggregator {
     private items: IGames[] = [];
 
     public getItems(): IGames[] {

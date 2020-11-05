@@ -1,4 +1,4 @@
-export interface IIterator< T> {
+export interface IIterator<T> {
     // Return the current element.
     current(): T;
 

@@ -1,9 +1,9 @@
 "use strict";
 exports.__esModule = true;
 exports.executeIterator = void 0;
-var Games_1 = require("./Games");
+var GamesCollector_1 = require("./GamesCollector");
 exports.executeIterator = function () {
-    var collection = new Games_1.Games();
+    var collection = new GamesCollector_1.GamesCollector();
     collection.addItem({
         id: 1,
         name: "Among Us",

@@ -1,12 +1,12 @@
 import { IIterator } from "../Agregator/IIterator";
-import { Games } from "../Games";
+import { GamesCollector } from "../GamesCollector";
 import { IGames } from "../IGames";
 
 export class StudioNameOrderIterator implements IIterator<IGames> {
-    private collection: Games;
+    private collection: GamesCollector;
     private position: number = 0;
 
-    constructor(collection: Games) {
+    constructor(collection: GamesCollector) {
         this.collection = collection;
     }
 

@@ -1,27 +1,27 @@
 "use strict";
 exports.__esModule = true;
-exports.Games = void 0;
+exports.GamesCollector = void 0;
 var GameNameOrderIterator_1 = require("./Iterators/GameNameOrderIterator");
 var StudioNameOrderIterator_1 = require("./Iterators/StudioNameOrderIterator");
-var Games = /** @class */ (function () {
-    function Games() {
+var GamesCollector = /** @class */ (function () {
+    function GamesCollector() {
         this.items = [];
     }
-    Games.prototype.getItems = function () {
+    GamesCollector.prototype.getItems = function () {
         return this.items;
     };
-    Games.prototype.getCount = function () {
+    GamesCollector.prototype.getCount = function () {
         return this.items.length;
     };
-    Games.prototype.addItem = function (item) {
+    GamesCollector.prototype.addItem = function (item) {
         this.items.push(item);
     };
-    Games.prototype.getNameIterator = function () {
+    GamesCollector.prototype.getNameIterator = function () {
         return new GameNameOrderIterator_1.GameNameOrderIterator(this);
     };
-    Games.prototype.getStudioNameIterator = function () {
+    GamesCollector.prototype.getStudioNameIterator = function () {
         return new StudioNameOrderIterator_1.StudioNameOrderIterator(this);
     };
-    return Games;
+    return GamesCollector;
 }());
-exports.Games = Games;
+exports.GamesCollector = GamesCollector;
